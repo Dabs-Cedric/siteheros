@@ -28,9 +28,33 @@
 
 
     <footer>
-      <a href="http://">Twitter</a>
-      <a href="http://">Facebook</a>
-      <a href="http://">Instagram</a>
+      <h1>Form / Formulaire</h1>
+<br>
+	<form autocomplete action="/action_page.php">
+	<fieldset>
+    <legend>Informations personnelles:</legend>
+  <input type="radio" name="genre" value="male" checked> Homme<br>
+  <input type="radio" name="genre" value="female"> Femme<br>
+  <input type="radio" name="genre" value="other"> Autre<br><br>
+  Prénom:<br>
+  <input type="text" name="prenom" value="John"><br>
+  Nom:<br>
+  <input type="text" name="nom" value="Doe"><br>
+  Navigateur Internet:<br>
+  <input list="navigateur" name="navigateur">
+  <datalist id="navigateur">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist><br><br>
+      <div>
+        <a href="http://">Twitter</a>
+        <a href="http://">Facebook</a>
+        <a href="http://">Instagram</a>
+      </div>
+      
     </footer>
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
